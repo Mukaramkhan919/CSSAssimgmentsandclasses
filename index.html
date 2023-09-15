@@ -1,103 +1,137 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOrms</title>
+    <style>
+        body{
+            background: url(./full-image-website-background-use-color.png);
+            background-repeat: no-repeat;
+           
+        }
+        #green{
+            /* border: solid green 1px; */
+            width: 20%;
+           margin-left: 500px;
+           background-color: rgba(151, 161, 11, 0.315);
+           padding-left: 6px;
+           padding-bottom: 6px;
+           box-shadow: 5px 8px 10px crimson;
+           margin-top: 110px;
+
+            
+        }
+        input{
+            color: darkslategray;
+
+          
+            border: solid rgb(138, 5, 5);
+            border-radius: 6px;
+            
+
+
+        }
+        
+        input:focus{
+            background-color: bisque;
+        }
+        button{
+            color: rgb(0, 43, 100);
+            border-radius: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+            font-size: 15px;
+        
+        
+        }
+
+
+        button:hover{
+            cursor: pointer;
+            background-color: rgba(100, 148, 237, 0.37);
+
+            
+        }
+        input:hover{
+            background-color: rgba(100, 148, 237, 0.37);
+
+            cursor: pointer;
+        }
+        label{
+            color: rgb(0, 43, 100);
+        }
+        legend{
+            font-size: 30px;
+            text-shadow: 1px 1px red  ;
+        }
+        input[type=email]{
+            background-image: url(https://png.pngtree.com/png-vector/20190927/ourmid/pngtree-email-icon-png-image_1757854.jpg);
+      background-size: 20px;
+      background-repeat: no-repeat;
+      padding-left: 20px;
+      padding-bottom: 5px;
+      padding-right: 10px;
+        }
+        input[type=text]{
+            background-image: url(https://img.icons8.com/ios7/600w/000000/name.png);
+       
+            background-size: 20px;
+      background-repeat: no-repeat;
+      padding-left: 20px;
+      padding-bottom: 5px;
+      padding-right: 10px;
+       
+        }
+        input[type=password]{
+            background-image: url(https://cdn.icon-icons.com/icons2/1456/PNG/512/mbrilock_99595.png);
+      
+            background-size: 19px;
+      background-repeat: no-repeat;
+      padding-left: 23px;
+      padding-bottom: 6px;
+      padding-right: 10px;
+       
+       
+       
+       
+       
+        }
+
+        
+
+    </style>
 </head>
 <body>
-<p><h1>Odered list</h1>
-<ol>
-<li>fruits</li>
-<ol>
-<li>mango</li>
-<li>orange</li>
-</ol>
-<li>vegetables</li>
-<ol>
-<li>cabbage</li>
-<li>capsicum</li>
-<ol>
-<li>green capisicum</li>
-<li>yellow capisisum</li>
-<li>red capisisum</li>
-</ol>
-</ol>
-</ol>
-</p>
 
-<br/>
-
-<p>
-<h2>Unodered List</h2>
-<ul>
-<li>choclates</li>
-<li>biscuts</li>
-<ul>
-<li>jim-jam</li>
-<li>oreo</li>
-</ul>
-<li>gifts</li>
-<li>fruits</li>
-</ul>
-</p>
-
-<br/>
-
-<p><h3>Nested List</h3>
-<ol>
-<li>choclates</li>
-<ul>
-<li>dairy milk</li>
-<li>bournvile</li>
-<li>munch</li>
-</ul>
-<li>Games</li>
-<ul>
-<li>cricket</li>
-<li>hockey</li>
-<li>football</li>
-</ul>
-<li>fruits</li>
-<ul>
-<li>apple</li>
-<li>Orange</li>
-<li>grapes</li>
-</ul>
-</ol>
-</p>
-
-
-<br/>
- 
-<p><h4>Second Nested List</h4>
-<ul>
-<li>fruit<li>
-<ul>
-<li>Bananas</li>
-<li>Apples</li>
-<ul>
-<li>green</li>
-<li>red</li>
-</ul>
-<li>pears</li>
-</ul>
-<li>vegetables</li>
-<li>meat</li>
-</ul>
-</p>
-<br/>
-<p><h5>odered and sub item list</h5>
-<ol>
-<li>item One</li>
-<li>item Two</li>
-<ul type="none">
-<li>2.1sub-item one</li>
-<ul type="none">
-<li>2.1.1Sub-sub-item one</li>
-<li>2.1.1Sub-sub-item Two</li>
-</ul>
-<li>2.2Sub-item Two</li>
-</ul>
-<li>item three</li>
-</ol>
-</p>
-
+ <div id="green">
+    <fieldset>
+<legend>Rigester Here</legend>
+    <label >First name:</label>
+    <br>
+    <input type="text">
+    <br>
+    <label  >Last Name:</label>
+    <br>
+    <input type="text">
+    <br>
+    <label >EMAil:</label>
+    <br>
+    <input type="email">
+    <br>
+    <label>Password:</label>
+    <br>
+    <input type="password">
+    <br>
+    <br>
+    <label >GENDER:</label>
+    <br>
+    <input type="radio" name="GENDER">Male
+    <input type="radio" name="GENDER">Female
+    <br>
+    <br>
+    <button>Submit</button>
+</fieldset>
+</div>
 </body>
 </html>
